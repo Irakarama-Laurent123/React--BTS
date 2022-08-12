@@ -15,7 +15,7 @@ function App() {
     <div className="app">
       <h1>Hi there!</h1>
       <Demo show={showPara} />
-      <Button onClick={toggleShow}></Button>
+      <Button onClick={toggleShow}>Toggle Paragraph</Button>
     </div>
   );
 }

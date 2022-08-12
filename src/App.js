@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 
 import "./App.css";
 import Button from "./components/UI/Button/Button";
@@ -7,9 +7,9 @@ import Demo from "./components/Demo/Demo";
 function App() {
   const [showPara, setShowPara] = useState(false);
 
-  const toggleShow = () => {
+  const toggleShow = useCallback(() => {
     setShowPara((prevShow) => !prevShow);
-  };
+  }, []);
 
   return (
     <div className="app">
